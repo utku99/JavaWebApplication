@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+<title>Document</title>
+   
+    <style>
+nav {
+  width: 80%;
+  margin: 0 auto;
+  background: rgb(255, 255, 255);
+  padding: 50px 0;
+  box-shadow: 0px 5px 0px #dedede;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: rgb(170, 170, 170);
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #333;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+    </style><style>
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  </style></h:head>
+<h:body>
+    <section class="tm-bg-color-primary" style="color: rgb(255, 255, 255);">
+        <nav class="stroke">
+          
+<ul>
+            
+<li><a href="home.xhtml">Home</a></li>
+          
+<li> <a href="about.xhtml">About</a></li>
+          
+<li><a href="moreInfo.xhtml">More Info</a></li>
+          
+<li><a href="follow.xhtml">Follow</a></li>
+          
+<li><a href="signUp.xhtml">Sign Up</a></li>
+          
+<li><a href="signIn.xhtml">Sign In</a></li>
+          </ul>
+        </nav>
+        
+      </section>
+    
+<div>
+   
+<table style="display: flex; align-items: center; justify-content: center; margin-top: 5%;">
+      
+<tbody>
+<tr>
+        
+<th>
+<h3>Bilgileriniz</h3></th>
+        
+<th />
+        
+      </tr>
+      
+<tr>
+        
+<td>Nakliye aracı modeli:</td>
+        
+<td>
+    <h:dataTable value="#{userBean.read3}" var="x">
+        <h:column>
+                    #{x.model}
+        </h:column>
+    </h:dataTable>
+</td>
+     
+      </tr>
+      
+<tr>
+        
+<td>Nakliye aracının plakası:</td>
+        
+<td>
+    <h:dataTable value="#{userBean.read3}" var="x">
+        <h:column>
+                    #{x.plates} 
+        </h:column>
+    </h:dataTable>
+</td>
+      
+      </tr>
+      
+<tr>
+        
+<td>Tahmini ücret:</td>
+        
+<td>
+    
+    <h:dataTable value="#{userBean.read2}" var="x">
+        <h:column>
+                    #{x.fee} TL
+        </h:column>
+    </h:dataTable>
+    
+</td>
+        
+      </tr>
+      
+<tr>
+        
+<td>Nakliye ulaştırmaktan sorumlu kişi:</td>
+        
+<td>
+    <h:dataTable value="Sn. Abdullah Bey">
+        <h:column>
+            Sn. Abdullah Bey
+        </h:column>
+    </h:dataTable>
+</td>
+        
+      </tr>
+      
+<tr>
+        
+<td>Sorumlu kişi telefon numarası:</td>
+        
+<td>+092324124</td>
+       
+      </tr>
+      
+<tr>
+        
+<td>Nakliye numarası:</td>
+        
+<td>
+    <h:dataTable value="#{userBean.read}" var="x">
+        <h:column>
+                    #{x.numbers}
+        </h:column>
+    </h:dataTable>
+  
+</td>
+        
+      </tr>
+    </tbody></table>
+    
+        </div>
+      <br /><br /><br /><br /><br />
+        
+<div style="left: 0px; bottom: 0px; width: 100%; background-color: rgba(82, 114, 255, 0.98); color: white; text-align: center;">
+     
+<p>Net fasulyeler A.Ş.</p>
+     
+<p>Tüm hakları saklıdır ©</p>
+   </div>
+</h:body></html>

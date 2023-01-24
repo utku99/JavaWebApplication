@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&amp;display=swap" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="home/fonts/icomoon/style.css" />
+    
+    <link rel="stylesheet" href="home/css/classic.css" />
+    <link rel="stylesheet" href="home/css/classic.date.css" />
+    <link rel="stylesheet" href="home/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="home/css/style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+      nav {
+  width: 80%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 50px 0;
+  box-shadow: 0px 5px 0px #dedede;
+  background-color: #caf0f8;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: rgb(46, 44, 44);
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #333;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+    </style>
+    
+<title>Ana sayfa</title>
+  </h:head>
+  
+<h:body>
+    <section style="background: rgb(231, 76, 60); color: rgb(255, 255, 255);">
+      <nav class="stroke">
+        
+          
+<ul>
+<li><a href="home.xhtml">Home</a></li>
+          
+<li> <a href="about.xhtml">About</a></li>
+          
+<li><a href="moreInfo.xhtml">More Info</a></li>
+          
+<li><a href="follow.xhtml">Follow</a></li>
+          
+<li><a href="signUp.xhtml">Sign Up</a></li>
+          
+<li><a href="signIn.xhtml">Sign In</a></li>
+        </ul>
+      </nav>
+      
+    </section>
+
+    
+    
+  
+<div class="w3-content" style="max-width: 2000px; margin-top: 46px;">
+    
+    
+<div class="w3-container w3-content w3-center w3-padding-64" style="max-width: 800px;" id="band">
+      
+<h2 class="w3-wide">Net Fasulyeler</h2>
+      
+<p class="w3-opacity"><i>Nakliye bizim işimiz</i></p>
+      
+<p class="w3-justify">Net fasulyeler olarak amacımız nakliye alanında üstün hizmetler vermek ve alanında uzman elemanlarıyla size mükemmel bir deneyim kazandırmak </p>
+<div class="w3-row w3-padding-32">
+        
+<div class="w3-third">
+          
+<p>UTKU</p>
+          <img src="home/images/ut.jpg" class="w3-round w3-margin-bottom" alt="Utku" style="width: 60%;" />
+        </div>
+        
+<div class="w3-third">
+          
+<p>ABDULLAH</p>
+          <img src="home/images/apo.jpeg" class="w3-round w3-margin-bottom" alt="Apo" style="width: 60%;" />
+        </div>
+        
+<div class="w3-third">
+          
+<p>ALPEREN</p>
+          <img src="home/images/alp.png" class="w3-round" alt="Alpi" style="width: 60%;" />
+        </div>
+      </div>
+    </div>
+
+    
+    
+    
+    
+    
+    
+<div class="w3-container w3-content w3-padding-64" style="max-width: 800px;" id="contact">
+      
+<h2 class="w3-wide w3-center">Teslimat bilgilerini girin</h2>
+      
+
+
+<p class="w3-opacity w3-center"><i /></p>
+      
+<div class="w3-row w3-padding-32">
+        
+<div class="w3-col m6 w3-large w3-margin-bottom">
+            <i class="fa fa-map-marker" style="width: 30px;" /> İstanbul,TR<br />
+          <i class="fa fa-phone" style="width: 30px;" /> Phone: +092324124<br />
+          <i class="fa fa-envelope" style="width: 30px;"> </i> Email: nfasulte@mail.com<br />
+        </div>
+        
+<div class="w3-col m6">
+    
+    
+    
+    <h:form id="amf">
+              
+<div class="w3-row-padding" style="margin: 0px -16px 8px;">
+          
+    <!-- class="w3-input w3-border" -->
+<div class="w3-half">
+                <label><b>Başlangıç Tarihi </b></label>
+                <h:inputText id="a" class="w3-input w3-border" value="#{userBean.entity.startdate}" required="true" requiredMessage="başlangıç tarihi boş olamaz" /><br/>
+               <label><b>Başlangıç Yeri</b></label>
+               <h:inputText id="b" class="w3-input w3-border" value="#{userBean.entity.a}" required="true" requiredMessage="başlangıç yeri boş olamaz"/>
+              </div>
+              
+<div class="w3-half">
+                <label><b>Bitiş Tarihi</b></label>
+                <h:inputText id="c" class="w3-input w3-border" value="#{userBean.entity.enddate}" required="true" requiredMessage="bitiş tarihi boş olamaz"/><br/>
+                <label><b>Bitiş Yeri</b></label>
+                <h:inputText id="d" class="w3-input w3-border" value="#{userBean.entity.b}" required="true" requiredMessage="bitiş yeri boş olamaz"/>
+              </div>
+            </div>
+
+                <h:commandButton action="#{userBean.insert2()}" onclick="myFunction2()" class="w3-button w3-black w3-section w3-right" value="SEND"/>
+        
+                
+                
+                
+                
+                
+          </h:form>
+    
+    <script>
+       document.getElementById("amf:a").value="";
+       document.getElementById("amf:b").value="";
+       document.getElementById("amf:c").value="";
+       document.getElementById("amf:d").value="";
+    </script>
+    
+    
+    <script>
+    function myFunction2() {
+        if(document.getElementById("amf:a").value != ""){
+            if(document.getElementById("amf:b").value != ""){
+                if(document.getElementById("amf:c").value != ""){
+                    if(document.getElementById("amf:d").value != "")
+                      alert("Nakliye kayıt işleminiz gerçekleşti");  
+                }
+            }
+        }
+    }
+</script>
+
+    
+        </div>
+      </div>
+    </div>
+    
+ 
+  </div>
+  
+ 
+  <img src="" class="w3-image w3-greyscale-min" style="width: 100%;" alt="" />
+    
+  
+<script>
+    
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i &lt; x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex &gt; x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 4000);    
+    }
+    
+  
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    
+   
+    var modal = document.getElementById('ticketModal');
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+    
+<script src="home/js/jquery-3.3.1.min.js"></script>
+    
+<script src="home/js/popper.min.js"></script>
+    
+<script src="home/js/bootstrap.min.js"></script>
+    
+<script src="home/js/picker.js"></script>
+    
+<script src="home/js/picker.date.js"></script>
+    
+<script src="home/js/main.js"></script>
+
+<a href="#top" style="color: blue; border-style: solid; border-color: black; padding: 0 5px 0 5px "><b>Go top</b></a>    
+
+<div style="left: 0px; bottom: 0px; width: 100%; background-color: rgba(82, 114, 255, 0.98); color: white; text-align: center;">
+    
+<p>Net fasulyeler A.Ş.</p>
+<p>Tüm hakları saklıdır ©</p></div>
+  
+</h:body></html>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+<head><style>.gm-style-pbc{transition:opacity ease-in-out;background-color:rgba(0,0,0,0.45);text-align:center}.gm-style-pbt{font-size:22px;color:white;font-family:Roboto,Arial,sans-serif;position:relative;margin:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
+</style><style>.gm-style img{max-width: none;}.gm-style {font: 400 11px Roboto, Arial, sans-serif; text-decoration: none;}</style>
+    
+<meta charset="UTF-8" />
+    
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+<title>maps</title>
+    <style>
+        #map{
+            height:400px;
+            width:1000px;
+        }
+    </style>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5C0XB2nisaTgPaqeHzvwlzrN8gl19Hq4&amp;callback=initMap&amp;libraries=&amp;v=weekly" async=""></script>
+<script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/45/1a/intl/tr_ALL/common.js"></script>
+<script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/45/1a/intl/tr_ALL/util.js"></script>
+<script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/45/1a/intl/tr_ALL/map.js"></script>
+<script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/45/1a/intl/tr_ALL/marker.js"></script>
+<script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/45/1a/intl/tr_ALL/onion.js"></script>
+<script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps/api/js/ViewportInfoService.GetViewportInfo?1m6&amp;1m2&amp;1d38.463336342611456&amp;2d20.72378035701048&amp;2m2&amp;1d43.602833871150054&amp;2d37.30280464261887&amp;2u8&amp;4str-TR&amp;5e0&amp;6sm%40559000000&amp;7b0&amp;8e0&amp;12e2&amp;callback=_xdc_._6rsrir&amp;key=AIzaSyD5C0XB2nisaTgPaqeHzvwlzrN8gl19Hq4&amp;token=107959"></script>
+<script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps/vt?pb=!1m4!1m3!1i8!2i146!3i95!1m4!1m3!1i8!2i147!3i95!1m4!1m3!1i8!2i148!3i95!1m4!1m3!1i8!2i149!3i95!1m4!1m3!1i8!2i150!3i95!1m4!1m3!1i8!2i146!3i96!1m4!1m3!1i8!2i147!3i96!1m4!1m3!1i8!2i148!3i96!1m4!1m3!1i8!2i149!3i96!1m4!1m3!1i8!2i150!3i96!2m3!1e0!2sm!3i559283544!3m12!2str-TR!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!4e3!12m1!5b1&amp;callback=_xdc_._c3r5qn&amp;key=AIzaSyD5C0XB2nisaTgPaqeHzvwlzrN8gl19Hq4&amp;token=26056"></script></head>
+ 
+
+<body>
+<h1>map</h1>
+    
+<div id="map" style="position: relative; overflow: hidden;">
+<div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);">
+<div class="gm-style" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;">
+<div tabindex="0" aria-label="Map" aria-roledescription="map" role="group" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; touch-action: pan-x pan-y;">
+<div style="z-index: 1; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);">
+<div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;">
+<div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+<div style="position: absolute; z-index: 992; transform: matrix(1, 0, 0, 1, -156, -248);">
+<div style="position: absolute; left: 0px; top: 256px; width: 256px; height: 256px;">
+<div style="width: 256px; height: 256px;" /></div>
+<div style="position: absolute; left: -256px; top: 256px; width: 256px; height: 256px;">
+<div style="width: 256px; height: 256px;" /></div>
+<div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px;">
+<div style="width: 256px; height: 256px;" /></div>
+<div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;">
+<div style="width: 256px; height: 256px;" /></div>
+<div style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px;">
+<div style="width: 256px; height: 256px;" /></div>
+<div style="position: absolute; left: 256px; top: 256px; width: 256px; height: 256px;">
+<div style="width: 256px; height: 256px;" /></div>
+<div style="position: absolute; left: -512px; top: 256px; width: 256px; height: 256px;">
+<div style="width: 256px; height: 256px;" /></div>
+<div style="position: absolute; left: -512px; top: 0px; width: 256px; height: 256px;">
+<div style="width: 256px; height: 256px;" /></div>
+<div style="position: absolute; left: 512px; top: 0px; width: 256px; height: 256px;">
+<div style="width: 256px; height: 256px;" /></div>
+<div style="position: absolute; left: 512px; top: 256px; width: 256px; height: 256px;">
+<div style="width: 256px; height: 256px;" /></div></div></div></div>
+<div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;" />
+<div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;" />
+<div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;">
+<div style="position: absolute; left: 0px; top: 0px; z-index: -1;">
+<div style="position: absolute; z-index: 992; transform: matrix(1, 0, 0, 1, -156, -248);">
+<div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 256px;" />
+<div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: 256px;" />
+<div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: 0px;" />
+<div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 0px;" />
+<div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: 0px;" />
+<div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: 256px;" />
+<div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -512px; top: 256px;" />
+<div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -512px; top: 0px;" />
+<div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 512px; top: 0px;" />
+<div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 512px; top: 256px;" /></div></div>
+<div style="width: 27px; height: 43px; overflow: hidden; position: absolute; left: -14px; top: -43px; z-index: 0;"><img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi2.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 27px; height: 43px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;" /></div>
+<div style="width: 27px; height: 43px; overflow: hidden; position: absolute; left: -196px; top: -43px; z-index: 0;"><img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi2.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 27px; height: 43px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;" /></div></div>
+<div style="position: absolute; left: 0px; top: 0px; z-index: 0;" /></div>
+<div class="gm-style-pbc" style="z-index: 2; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; opacity: 0;">
+<p class="gm-style-pbt" /></div>
+<div style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; touch-action: pan-x pan-y;">
+<div style="z-index: 4; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);">
+<div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;" />
+<div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;" />
+<div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;">
+<div tabindex="-1" style="width: 27px; height: 43px; overflow: hidden; position: absolute; left: -14px; top: -43px; z-index: 0;"><img alt="" src="https://maps.gstatic.com/mapfiles/transparent.png" draggable="false" usemap="#gmimap0" style="width: 27px; height: 43px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;" /><map name="gmimap0" id="gmimap0"><area log="miw" coords="13.5,0,4,3.75,0,13.5,13.5,43,27,13.5,23,3.75" shape="poly" tabindex="-1" title="" style="cursor: pointer; touch-action: none;" /></map></div>
+<div tabindex="-1" style="width: 27px; height: 43px; overflow: hidden; position: absolute; left: -196px; top: -43px; z-index: 0;"><img alt="" src="https://maps.gstatic.com/mapfiles/transparent.png" draggable="false" usemap="#gmimap1" style="width: 27px; height: 43px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;" /><map name="gmimap1" id="gmimap1"><area log="miw" coords="13.5,0,4,3.75,0,13.5,13.5,43,27,13.5,23,3.75" shape="poly" tabindex="-1" title="" style="cursor: pointer; touch-action: none;" /></map></div></div>
+<div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;" /></div></div></div><iframe aria-hidden="true" frameborder="0" tabindex="-1" style="z-index: -1; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: none;" />
+<div style="pointer-events: none; width: 100%; height: 100%; box-sizing: border-box; position: absolute; z-index: 1000002; opacity: 0; border: 2px solid rgb(26, 115, 232);" /></div></div></div>
+    
+<script>
+        function initMap(){
+            var options = {
+                zoom: 8,
+                center:{lat:41.015137 , lng:28.979530}
+            }
+            var map = new 
+            google.maps.Map(document.getElementById('map'),options);
+            //marker
+            var marker = new google.maps.Marker({
+                position:{lat:41.015137 , lng:28.979530},
+                map:map,
+                
+            });
+            var marker = new google.maps.Marker({
+                position:{lat:41.015137 , lng:27.979530},
+                map:map,
+                
+            });
+        }
+    </script>
+   
+
+<div style="position: absolute; left: 0px; top: -2px; height: 1px; overflow: hidden; visibility: hidden; width: 1px;"><span style="position: absolute; font-size: 300px; width: auto; height: auto; margin: 0px; padding: 0px; font-family: Roboto, Arial, sans-serif;">BESbswy</span></div></body></html>
